@@ -1,134 +1,43 @@
 @font-face {
   font-family: FFDin;
-  src: url('../font/FF_DIN_Regular.otf');
+  src: url('../font/FF_DIN_Regular.woff2') format('woff2'),
+       url('../font/FF_DIN_Regular.otf') format('opentype');
+  font-display: swap;
 }
-
 body {
   background-color: white;
-  font-family: FFDin;
+  font-family: FFDin, sans-serif;
   font-size: 1em;
   margin: 0;
 }
-
 a {
   text-decoration: none;
   color: #3D7A73;
 }
-
 h2 {
   font-size: 2em;
   font-weight: 400;
   margin: 0;
 }
-
 .profilepic {
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center center;
-  width:100%;
+  width: 100%;
   height: 30em;
 }
-
 .profilepic-container {
   box-sizing: border-box;
   padding: 3em;
   padding-top: 0em;
   padding-bottom: 0em;
 }
-
 nav {
   padding: 3em;
 }
-
 nav a {
   margin-right: 1em;
 }
-
-.underline {
-  padding-bottom: 2px;
-  border-bottom: 1px solid #3D7A73;
-}
-
-.bio {
-  text-align: center;
-  font-size: 2em;
-}
-
-.social {
-  font-weight: 900;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.social a {
-  margin-right: 0;
-  margin-left: 1em;
-}
-
-.project-container{
-  padding: 0em 18em 0em 18em;
-}
-
-.project-container a{
-    background-color:black;
-}
-
-.project-img{
-  position: relative;
-  font-size: 5em;
-  font-weight: 900;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 5em;
-  margin-bottom: 1em;
-  opacity: 1;
-}
-
-span {
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-  color: white;
-  opacity: 1.0;
-}
-
-.blackbg{
-  height: 100%;
-  width: 100%;
-}
-
-.img-airbus {
-  background-image: url("../img/airbus.jpg")
-}
-
-.img-tylertouche {
-  background-image: url("../img/tylertouche.jpg");
-}
-
-.img-airshare {
-  background-image: url("../img/airshare.jpg");
-}
-
-.img-ccc {
-  background-image: url("../img/ccc.jpg");
-}
-
-.img-seaeagles {
-  background-image: url("../img/seaeagles.jpg");
-}
-
-.img-popcloud {
-  background-image: url("../img/popcloud.jpg");
-}
-
-.img-ringarosie {
-  background-image: url("../img/ringarosie.jpg");
-}
-
 .bio {
   font-size: 1em;
   text-align: left;
@@ -137,8 +46,13 @@ span {
 .bio h2 {
   padding-bottom: 1em;
 }
-
-.transparent {
-  background:#7f7f7f;
-  background:rgba(0,0,0,0.6);
+.social {
+  font-weight: 900;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.social a {
+  margin-right: 0;
+  margin-left: 1em;
 }
